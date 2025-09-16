@@ -9,7 +9,7 @@ const Categories = ({ data }) => {
           </h1>
           <span className=" absolute -bottom-3 w-20 h-1 bg-amber-600 my-2"></span>
         </div>
-        <div className="grid grid-cols-[repeat(auto-fit,200px)] gap-4 my-10">
+        <div className="grid lg:grid-cols-[repeat(auto-fit,200px)] grid-cols-2 gap-3 my-10">
           {data.map((item, index) => {
             return (
               <Link

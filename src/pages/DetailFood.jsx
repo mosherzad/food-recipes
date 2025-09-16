@@ -52,7 +52,7 @@ const DetailFood = () => {
             </h1>
             <span className=" absolute -bottom-3 w-20 h-1 bg-amber-600 my-2"></span>
           </div>
-          <div className="grid grid-cols-[repeat(auto-fit,200px)] gap-2">
+          <div className="grid lg:grid-cols-[repeat(auto-fit,200px)] grid-cols-2 gap-2">
             {data.map((meal, index) => {
               return (
                 <Link

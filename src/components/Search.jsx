@@ -1,9 +1,8 @@
 import { useState } from "react";
-import Background from "../assets/images/background.jpg";
+import Background from "../assets/images/background.webp";
 import { FaSearch } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import axios from "axios";
-import { TbH1 } from "react-icons/tb";
 const Search = () => {
   const [query, setQuery] = useState("");
   const [results, setResults] = useState([]);
@@ -35,7 +34,7 @@ const Search = () => {
               <input
                 type="text"
                 placeholder="Search Meal"
-                className="px-8 py-2 rounded-full border bg-white focus:outline-none"
+                className="lg:px-8 py-2 rounded-full border px-6 bg-white focus:outline-none "
                 value={query}
                 onChange={handleSearch}
               />
@@ -63,7 +62,7 @@ const Search = () => {
               key={index}
               className="w-full bg-white rounded-[0.5rem] relative p-3 group"
             >
-              <div className="w-[95%] mx-auto group-hover:scale-110 transition-all duration-300">
+              <div className="w-[95%] mx-auto group-hover:scale-95 transition-all duration-300">
                 <img src={recipe?.strMealThumb} className="rounded-[0.5rem]" />
               </div>
               <span className="font-semibold text-[13px] absolute top-0 right-0 bg-amber-600 text-white rounded-2xl px-2 m-1">
