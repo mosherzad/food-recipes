@@ -2,7 +2,7 @@ import "./App.css";
 import Header from "./components/Header";
 import Home from "./pages/Home";
 import Footer from "./components/Footer";
-import DetailFood from "./pages/DetailFood";
+import DetailFood from "./pages/RelatedCategory";
 import MealDetail from "./components/MealDetail";
 import ScrollToTop from "./components/ScrollToTop";
 import { Routes, Route } from "react-router-dom";

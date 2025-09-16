@@ -78,7 +78,7 @@ const MealDetail = () => {
                     </span>{" "}
                     <a
                       href={data?.strYoutube}
-                      className="text-[15px] max-sm:text-sm"
+                      className="text-[15px] max-sm:text-[13px]"
                     >
                       {data?.strYoutube}
                     </a>
