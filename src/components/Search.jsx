@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Background from "../assets/images/Background.jpg";
+import Background from "../assets/images/background.jpg";
 import { FaSearch } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import axios from "axios";
