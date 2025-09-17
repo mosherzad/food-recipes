@@ -30,11 +30,11 @@ const Search = () => {
         <div>
           <div className=" relative w-full h-80">
             <img src={Background} className="w-full h-full object-cover " />
-            <div className="absolute inset-0 flex items-center justify-center gap-x-3 z-1">
+            <div className="absolute inset-0 flex items-center justify-center gap-x-3 z-1 overflow-hidden mx-2">
               <input
                 type="text"
-                placeholder="Search Meal"
-                className="lg:px-8 py-2 rounded-full border px-6 bg-white focus:outline-none "
+                placeholder="Search Recipe"
+                className="lg:px-8 py-2 rounded-full border px-2 bg-white focus:outline-none "
                 value={query}
                 onChange={handleSearch}
               />
@@ -54,13 +54,13 @@ const Search = () => {
       ) : (
         ""
       )}
-      <div className="container mx-auto grid grid-cols-[repeat(auto-fit,200px)] gap-3 my-5">
+      <div className="container mx-auto grid grid-cols-[repeat(auto-fit,200px)] max-sm:grid-cols-2 md:grid-cols-2 gap-3 my-5">
         {results?.map((recipe, index) => {
           return (
             <Link
               to={`/meal-detail/${recipe?.idMeal}`}
               key={index}
-              className="w-full bg-white rounded-[0.5rem] relative p-3 group"
+              className="w-full bg-white rounded-[0.5rem] relative p-3 group "
             >
               <div className="w-[95%] mx-auto group-hover:scale-95 transition-all duration-300">
                 <img src={recipe?.strMealThumb} className="rounded-[0.5rem]" />
@@ -68,7 +68,7 @@ const Search = () => {
               <span className="font-semibold text-[13px] absolute top-0 right-0 bg-amber-600 text-white rounded-2xl px-2 m-1">
                 {recipe?.strCategory}
               </span>
-              <p className="text-sm mt-3">{recipe?.strMeal}</p>
+              <p className="text-sm mt-3 ml-1">{recipe?.strMeal}</p>
             </Link>
           );
         })}
