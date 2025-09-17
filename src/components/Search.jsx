@@ -34,7 +34,7 @@ const Search = () => {
               <input
                 type="text"
                 placeholder="Search Recipe"
-                className="lg:px-8 py-2 rounded-full border px-2 bg-white focus:outline-none "
+                className="lg:px-8 py-2 rounded-full border  max-w-[350px] bg-white focus:outline-none "
                 value={query}
                 onChange={handleSearch}
               />
