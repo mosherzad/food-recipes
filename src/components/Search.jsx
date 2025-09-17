@@ -34,7 +34,7 @@ const Search = () => {
               <input
                 type="text"
                 placeholder="Search Recipe"
-                className="lg:px-8 py-2 rounded-full border  max-w-[350px] bg-white focus:outline-none "
+                className="lg:px-8 py-2 rounded-full border px-2  max-w-[350px] bg-white focus:outline-none  "
                 value={query}
                 onChange={handleSearch}
               />
@@ -54,7 +54,7 @@ const Search = () => {
       ) : (
         ""
       )}
-      <div className="container mx-auto grid grid-cols-[repeat(auto-fit,200px)] max-sm:grid-cols-2 md:grid-cols-2 gap-3 my-5">
+      <div className="container mx-auto grid lg:grid-cols-[repeat(auto-fit,200px)] max-sm:grid-cols-2 md:grid-cols-2 gap-3 my-5">
         {results?.map((recipe, index) => {
           return (
             <Link
