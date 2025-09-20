@@ -30,12 +30,11 @@ const Search = () => {
         <div>
           <div className=" relative w-full h-80">
             <img src={Background} className="w-full h-full object-cover " />
-            <div className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 flex items-center gap-x-3 z-10 mx-2">
+            <div className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 flex items-center gap-x-4 z-10 mx-2">
               <input
                 type="text"
                 placeholder="Search Recipe"
-                className=" py-2 rounded-full border px-5 w-full max-sm:w-[35
-                0px] md:w-[410px] max-w-[430px] bg-white focus:outline-none"
+                className=" py-2 rounded-full border px-5 w-full max-sm:w-[300px] md:w-[440px] max-w-[450px] bg-white focus:outline-none"
                 value={query}
                 onChange={handleSearch}
               />
